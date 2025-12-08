@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.container {
+  @apply max-w-[1140px] mx-auto w-full;
+}
+
+@theme {
+  --breakpoint-tab: 920px;
+}
