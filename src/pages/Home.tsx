@@ -3,6 +3,7 @@ import HeroSec from "../components/HeroSec";
 import Events from "../components/Home/Events";
 import Info from "../components/Home/Info";
 import Quote from "../components/Home/Quote";
+import Upcoming from "../components/Home/Upcoming";
 
 const Home = () => {
   return (
@@ -33,21 +34,23 @@ const Home = () => {
         style={{
           backgroundImage: 'url("./Images/parallax.jpeg")',
         }}
-        className="h-150 w-full  bg-no-repeat bg-cover  relative bg-fixed mt-10"
+        className="h-150 w-full  bg-no-repeat bg-cover bg-center relative bg-fixed mt-10"
       >
         <div className="absolute inset-0 bg-black opacity-60"> </div>
 
         <div
-          className=" container h-full w-full z-10 relative text-white  flex justify-end items-center
+          className=" container  h-full z-10   text-white  relative   flex items-center justify-end
           "
         >
-          <Info
-            title="Explore The World"
-            desc="Diremit mundi mare undae nunc mixtam tanto sibi. Nubes unda concordi. Fert his. Recessit mentes praecipites locum caligine sui egens erat. Silvas caeli regna."
-          />
+          <div className="w-100">
+            <Info
+              title="Explore The World"
+              desc="Diremit mundi mare undae nunc mixtam tanto sibi. Nubes unda concordi. Fert his. Recessit mentes praecipites locum caligine sui egens erat. Silvas caeli regna."
+            />
+          </div>
         </div>
       </div>
-
+      <Upcoming />
       <Footer />
     </>
   );

@@ -8,13 +8,13 @@ interface InfoData {
 const Info = ({ title, desc }: InfoData) => {
   return (
     <div
-      className="flex flex-col items-start space-y-7 w-[40%] p-4
+      className="flex flex-col items-start space-y-7  p-4 w-full
 
 "
     >
       <h1 className="text-4xl font-bold "> {title}</h1>
       <div className="bg-[#fb2056] w-20 h-px  "> </div>
-      <p className="text-justify">{desc}</p>
+      <p className="  md:text-justify">{desc}</p>
       <Button value="LEARN MORE" />
     </div>
   );

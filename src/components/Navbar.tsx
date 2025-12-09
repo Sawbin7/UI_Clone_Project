@@ -20,10 +20,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const activeClass = (isActive: boolean) =>
-    isActive ? "font-bold text-[#fb2056]" : "text-white";
+    isActive
+      ? "font-bold text-[#fb2056] hover:underline hover:decoration-black"
+      : "text-white hover:underline hover:decoration-black";
 
   return (
-    <nav className="container mx-auto px-4 py-4">
+    <nav className="container mx-auto px-4 py-4 absolute">
       {/* Top section: logo + hamburger */}
       <div className="flex justify-between items-center">
         {/* Logo */}
@@ -54,7 +56,7 @@ const Navbar = () => {
 
       {/* Mobile menu (visible when isOpen is true, hidden on tab and above) */}
       {isOpen && (
-        <div className="flex flex-col gap-4 mt-4 tab:hidden items-center">
+        <div className="flex flex-col gap-4 mt-4 tab:hidden items-center bg-gray-600 p-4 rounded-xl opacity-90">
           {navLinks.map((item) => (
             <NavLink
               key={item.link}
