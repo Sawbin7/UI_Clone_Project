@@ -25,7 +25,7 @@ const Navbar = () => {
       : "text-white hover:underline hover:decoration-black";
 
   return (
-    <nav className="container mx-auto px-4 py-4 absolute">
+    <nav className="container mx-auto px-4 py-4 absolute  ">
       {/* Top section: logo + hamburger */}
       <div className="flex justify-between items-center">
         {/* Logo */}
